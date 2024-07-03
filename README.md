@@ -20,8 +20,8 @@ Data Structure:<br/>
 		data:	data structure containing the measurements
 	
 	    	for charge the fields are:
-			Voltage_measured: 	Battery terminal voltage (Volts) 전압
-			Current_measured:	Battery output current (Amps) 전류
+			Voltage_measured: 	Battery terminal voltage (Volts)
+			Current_measured:	Battery output current (Amps)
 			Temperature_measured: 	Battery temperature (degree C)
 			Current_charge:		Current measured at charger (Amps)
 			Voltage_charge:		Voltage measured at charger (Volts)
