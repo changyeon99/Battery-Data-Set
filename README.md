@@ -12,33 +12,33 @@ B0007.mat	Data for Battery #7<br/>
 B0018.mat	Data for Battery #18<br/>
 
 Data Structure:<br/>
-cycle:	top level structure array containing the charge, discharge and impedance operations<br/>
 
-	type: 	operation  type, can be charge, discharge or impedance<br/>
-	ambient_temperature:	ambient temperature (degree C)<br/>
-	time: 	the date and time of the start of the cycle, in MATLAB  date vector format<br/>
-	data:	data structure containing the measurements<br/>
-
-    	for charge the fields are:<br/>
-		Voltage_measured: 	Battery terminal voltage (Volts) 전압<br/>
-		Current_measured:	Battery output current (Amps) 전류<br/>
-		Temperature_measured: 	Battery temperature (degree C)<br/>
-		Current_charge:		Current measured at charger (Amps)<br/>
-		Voltage_charge:		Voltage measured at charger (Volts)<br/>
-		Time:			Time vector for the cycle (secs)<br/>
-	   for discharge the fields are:<br/>
-		Voltage_measured: 	Battery terminal voltage (Volts)<br/>
-		Current_measured:	Battery output current (Amps)<br/>
-		Temperature_measured: 	Battery temperature (degree C)<br/>
-		Current_charge:		Current measured at load (Amps)<br/>
-		Voltage_charge:		Voltage measured at load (Volts)<br/>
-		Time:			Time vector for the cycle (secs)<br/>
-		Capacity:		Battery capacity (Ahr) for discharge till 2.7V <br/>
-	   for impedance the fields are:<br/>
-		Sense_current:		Current in sense branch (Amps)<br/>
-		Battery_current:	Current in battery branch (Amps)<br/>
-		Current_ratio:		Ratio of the above currents<br/>
-		Battery_impedance:	Battery impedance (Ohms) computed from raw data<br/>
-		Rectified_impedance:	Calibrated and smoothed battery impedance (Ohms)<br/>
-		Re:			Estimated electrolyte resistance (Ohms)<br/>
-		Rct:			Estimated charge transfer resistance (Ohms)<br/>
+	cycle:	top level structure array containing the charge, discharge and impedance operations<br/>
+		type: 	operation  type, can be charge, discharge or impedance<br/>
+		ambient_temperature:	ambient temperature (degree C)<br/>
+		time: 	the date and time of the start of the cycle, in MATLAB  date vector format<br/>
+		data:	data structure containing the measurements<br/>
+	
+	    	for charge the fields are:<br/>
+			Voltage_measured: 	Battery terminal voltage (Volts) 전압<br/>
+			Current_measured:	Battery output current (Amps) 전류<br/>
+			Temperature_measured: 	Battery temperature (degree C)<br/>
+			Current_charge:		Current measured at charger (Amps)<br/>
+			Voltage_charge:		Voltage measured at charger (Volts)<br/>
+			Time:			Time vector for the cycle (secs)<br/>
+		   for discharge the fields are:<br/>
+			Voltage_measured: 	Battery terminal voltage (Volts)<br/>
+			Current_measured:	Battery output current (Amps)<br/>
+			Temperature_measured: 	Battery temperature (degree C)<br/>
+			Current_charge:		Current measured at load (Amps)<br/>
+			Voltage_charge:		Voltage measured at load (Volts)<br/>
+			Time:			Time vector for the cycle (secs)<br/>
+			Capacity:		Battery capacity (Ahr) for discharge till 2.7V <br/>
+		   for impedance the fields are:<br/>
+			Sense_current:		Current in sense branch (Amps)<br/>
+			Battery_current:	Current in battery branch (Amps)<br/>
+			Current_ratio:		Ratio of the above currents<br/>
+			Battery_impedance:	Battery impedance (Ohms) computed from raw data<br/>
+			Rectified_impedance:	Calibrated and smoothed battery impedance (Ohms)<br/>
+			Re:			Estimated electrolyte resistance (Ohms)<br/>
+			Rct:			Estimated charge transfer resistance (Ohms)<br/>
