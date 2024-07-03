@@ -13,11 +13,13 @@ B0018.mat	Data for Battery #18<br/>
 
 Data Structure:<br/>
 cycle:	top level structure array containing the charge, discharge and impedance operations<br/>
+
 	type: 	operation  type, can be charge, discharge or impedance<br/>
 	ambient_temperature:	ambient temperature (degree C)<br/>
 	time: 	the date and time of the start of the cycle, in MATLAB  date vector format<br/>
 	data:	data structure containing the measurements<br/>
-	   for charge the fields are:<br/>
+
+    	for charge the fields are:<br/>
 		Voltage_measured: 	Battery terminal voltage (Volts) 전압<br/>
 		Current_measured:	Battery output current (Amps) 전류<br/>
 		Temperature_measured: 	Battery temperature (degree C)<br/>
