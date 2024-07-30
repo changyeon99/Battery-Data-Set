@@ -30,8 +30,8 @@ Data Structure:<br/>
 			Voltage_measured: 	Battery terminal voltage (Volts)
 			Current_measured:	Battery output current (Amps)
 			Temperature_measured: 	Battery temperature (degree C)
-			Current_charge:		Current measured at load (Amps)
-			Voltage_charge:		Voltage measured at load (Volts)
+			Current_load:		Current measured at load (Amps)
+			Voltage_load:		Voltage measured at load (Volts)
 			Time:			Time vector for the cycle (secs)
 			Capacity:		Battery capacity (Ahr) for discharge till 2.7V 
 		   for impedance the fields are:
